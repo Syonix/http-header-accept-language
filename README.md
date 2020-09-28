@@ -1,6 +1,8 @@
 # Accept-Language HTTP Header Parser
 A parser for the Accept-Language HTTP header following [RFC 2616](https://tools.ietf.org/html/rfc2616#section-14.4)
 
+[![Build Status](https://travis-ci.org/Syonix/http-header-accept-language.svg?branch=master)](https://travis-ci.org/Syonix/http-header-accept-language)
+
 ## Usage
 ```php
 use Syonix\Http\Header\AcceptLanguage\AcceptLanguage;
