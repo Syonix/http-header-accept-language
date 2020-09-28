@@ -1,0 +1,20 @@
+{
+    "name": "syonix/http-header-accept-language",
+    "description": "A parser for the Accept-Language HTTP header following RFC 2616",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Syonix\\Http\\Header\\AcceptLanguage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Burri",
+            "email": "michael.burri@syonix.ch"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.3"
+    }
+}

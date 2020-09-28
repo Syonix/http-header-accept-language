@@ -1,0 +1,7 @@
+image: php:7.4
+before_script:
+  - composer install
+
+test:
+  script:
+    - ./vendor/bin/phpunit --coverage-text
