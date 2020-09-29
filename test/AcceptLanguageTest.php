@@ -14,6 +14,7 @@ class AcceptLanguageTest
 			['en;q=0.7, en-gb;q=0.8, da, *', ['da', 'en-gb', 'en', '*']],
 			['*, en;q=0.9, en-US', ['en-US', 'en', '*']],
 			['cc, aa, bb', ['cc', 'aa', 'bb']],
+			['de-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5', ['de-CH', 'fr', 'en', 'de', '*']],
 		];
 	}
 

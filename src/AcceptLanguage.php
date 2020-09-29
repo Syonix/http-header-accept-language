@@ -6,7 +6,7 @@ use RuntimeException;
 
 class AcceptLanguage
 {
-	const REGEX = '/([a-z]{1,8}(?:-[a-z0-9]{1,8})?)(?:;q=([0-9].[0-9]+))?/i';
+	const REGEX = '/([a-z*]{1,8}(?:-[a-z0-9]{1,8})?)(?:;q=([0-9].[0-9]+))?/i';
 
 	/**
 	 * @param string $in
@@ -22,7 +22,7 @@ class AcceptLanguage
 			$q = $matches[2] ?? 1;
 			$locale = $matches[1] ?? null;
 
-			if ($locale === null)
+			if ($locale === null || $locale === '*')
 				continue;
 
 			$locales[$q][$locale] = (float)$q;
